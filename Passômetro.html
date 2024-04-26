@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passômetro</title>
+    <style>
+        /* Basic styling for the sections and boxes */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .section {
+            flex: 1;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            text-align: center;
+            cursor: pointer; /* Add cursor pointer for clickable effect */
+        }
+        /* Each topic */
+        .topic {
+            width: calc(33.33% - 20px); /* One-third of the container width with some margin */
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: white; /* Color of the text */
+            font-size: 48px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            text-align: center; /* Center the title */
+        }
+          /* Basic CSS for the menu */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            font-size: 24px;
+        }
+        nav a {
+            display: inline-block; /* Change display to inline-block */
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topic">
+            <h1>Vascular</h1>
+            <div class="section">
+                <nav>
+                    <a href="InternadosV.html">Internados</a>
+                </nav>
+            </div>
+            <div class="section">
+                <nav>
+                    <a href="AltasV.html">Altas</a>
+                </nav>
+            </div>
+            <div class="section">
+                <nav>
+                    <a href="InternaçõesV.html">Internações</a>
+                </nav>
+            </div>
+        </div>
+        <div class="topic">
+            <h1>Endovascular</h1>
+            <div class="section">
+                <nav>
+                    <a href="InternadosE.html">Internados</a>
+                </nav>
+            </div>
+            <div class="section">
+                <nav>
+                    <a href="AltasE.html">Altas</a>
+                </nav>
+            </div>
+            <div class="section">
+                <nav>
+                    <a href="InternaçõesE.html">Internações</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

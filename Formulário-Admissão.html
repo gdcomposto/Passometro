@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Admissão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2vh;
+            background-color: #f0f0f0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit_form" method="POST">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" onchange="update()"><br>
+        
+        <label for="prontuario">Prontuário:</label><br>
+        <input type="text" id="prontuario" name="prontuario" onchange="update()"><br>
+    
+        <label for="atendimento">Atendimento:</label><br>
+        <input type="text" id="atendimento" name="atendimento" onchange="update()"><br>
+    
+        <label for="idade">Idade:</label><br>
+        <input type="text" id="idade" name="idade" onchange="update()"><br>
+    
+        <label for="dataNascimento">Data de Nascimento:</label><br>
+        <input type="date" id="dataNascimento" name="dataNascimento" onchange="update()"><br>
+    
+        <label for="municipioResidencia">Municipio de Residencia:</label><br>
+        <input type="text" id="municipioResidencia" name="municipioResidencia" onchange="update()"><br>
+    
+        <label for="dataAdmissao">Data de Admissão:</label><br>
+        <input type="date" id="dataAdmissao" name="dataAdmissao" onchange="update()"><br>
+    
+        <label for="dataAlta">Data de Alta:</label><br>
+        <input type="date" id="dataAlta" name="dataAlta" onchange="update()"><br>
+    
+        <label for="tempoInternacao">Tempo de Internação:</label><br>
+        <p id="tempoInternacao"></p>
+
+            <script>
+                document.getElementById('tempoInternação').textContent = document.getElementById('dataAdmissão').textContent - document.getElementById('dataAlta').textContent;
+            </script>
+    
+        <label for="autor">Autor:</label><br>
+        <input type="text" id="autor" name="autor" onchange="update()"><br>
+    
+        <label for="data">Data:</label><br>
+        <input type="date" id="data" name="data" onchange="update()"><br>
+    
+        <label for="passometro">Passômetro:</label><br>
+        <input type="text" id="passometro" name="passometro" onchange="update()"><br>
+    
+        <label for="evolucao">Evolução:</label><br>
+        <textarea id="evolucao" name="evolucao" onchange="update()"></textarea><br><br>
+
+    </form>
+    <script>
+        function update() {
+          // Aqui você pode adicionar o código para atualizar o formulário
+          // Por exemplo, você pode enviar uma solicitação AJAX para o servidor
+        }
+    </script>
+</body>
+</html>
